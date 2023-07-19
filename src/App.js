@@ -4,15 +4,42 @@ import Movie from './Movie';
 import PageWrapper from './PageWrapper';
 import moviesJson from './movies.json';
 import Pagination from './Pagination';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
 
 	const [actualPage, setActualPage] = useState(1);
+	//const [movies1, setMovies] = useState([]);
+
+	//useEffect(()=>{
+	//	searchMovies();
+	//},[]);
 
 	const TOTAL_FOR_PAGE = 7;
 
 	let movies = moviesJson;
+
+	//Debido a que el json del servidor esta en español y en el archivo movies se capturan los valores en ingles.
+	
+	//const searchMovies = async () => {
+	//	let url = 'https://lucasmoy.dev/data/react/peliculas.json';
+//
+	//    let result = await fetch(url, {
+	//		"method":'GET',
+	//		"mode":'no-cors',
+	//		"headers":{
+	//			"Accept":'application/json',
+	//			"Content-Type":'application/json'
+	//		}
+	//	});
+//
+	//	let json = await result.json();
+//
+	//	alert(json);
+	//}
+//
+	//searchMovies();
+
 
 	const uploadMovies = ()=>{
 
