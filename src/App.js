@@ -2,8 +2,8 @@
 
 import './App.css';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import MoviesList from './MoviesList';
-import Blog from './Blog';
+import MoviesList from './views/MoviesList';
+import Blog from './views/Blog';
 
 function App() {	
   return (	

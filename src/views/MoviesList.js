@@ -1,8 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from '../logo.svg';
+import '../App.css';
 import Movie from './Movie';
 import PageWrapper from './PageWrapper';
-import moviesJson from './movies.json';
+import moviesJson from '../movies.json';
 import Pagination from './Pagination';
 import { useEffect, useState } from 'react';
 
